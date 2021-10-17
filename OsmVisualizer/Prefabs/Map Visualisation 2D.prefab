@@ -1,0 +1,317 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &260107852985123009
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 260107852985123020}
+  - component: {fileID: 260107852985123011}
+  - component: {fileID: 260107852985123010}
+  - component: {fileID: 260107852985123018}
+  - component: {fileID: 260107852985123017}
+  - component: {fileID: 260107852985123016}
+  - component: {fileID: 260107852985123021}
+  - component: {fileID: 3447626726949531013}
+  m_Layer: 9
+  m_Name: Map Visualisation 2D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &260107852985123020
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260107852985123009}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &260107852985123011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260107852985123009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50102d79e54b48329045e4888e2252e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 0
+  yOffset: -100
+--- !u!114 &260107852985123010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260107852985123009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f6732a3458e433ea50263bfe7b057ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layer:
+    serializedVersion: 2
+    m_Bits: 512
+  combineMeshes: 1
+  createCollider: 0
+  yOffset: 0
+  componentName: Buildings
+  componentFullName: 
+  defaultMaterial: {fileID: 2100000, guid: 1e2d5ddda23b3af478200e585619e07e, type: 2}
+  materials:
+  - name: brick
+    mat: {fileID: 2100000, guid: 61a809076d1d6e64480fc4222e0bb3b4, type: 2}
+  - name: stone
+    mat: {fileID: 2100000, guid: b6830177ac5686d42a9f8e44e82cf9cb, type: 2}
+  showRoofs: 1
+  showFloors: 1
+--- !u!114 &260107852985123018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260107852985123009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67a0f03ca2e54499856150eaa25039c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layer:
+    serializedVersion: 2
+    m_Bits: 512
+  combineMeshes: 1
+  createCollider: 0
+  yOffset: -0.03
+  componentName: Landuse
+  componentFullName: 
+  defaultMaterial: {fileID: 2100000, guid: 6041e2aba4a6521489274cf2d76aea7e, type: 2}
+  materials:
+  - name: commercial
+    mat: {fileID: 2100000, guid: bf61ee3da27bd0b43b4fc8b93079357f, type: 2}
+  - name: construction
+    mat: {fileID: 2100000, guid: bf61ee3da27bd0b43b4fc8b93079357f, type: 2}
+  - name: industrial
+    mat: {fileID: 2100000, guid: bf61ee3da27bd0b43b4fc8b93079357f, type: 2}
+  - name: residential
+    mat: {fileID: 2100000, guid: 42200e11dcf7bb14b9ad5550884b0cac, type: 2}
+  - name: retail
+    mat: {fileID: 2100000, guid: 42200e11dcf7bb14b9ad5550884b0cac, type: 2}
+  - name: allotments
+    mat: {fileID: 2100000, guid: 9f32b531980f7cb47b76eb84b9c645cb, type: 2}
+  - name: farmland
+    mat: {fileID: 2100000, guid: 9f32b531980f7cb47b76eb84b9c645cb, type: 2}
+  - name: farmyard
+    mat: {fileID: 2100000, guid: 6041e2aba4a6521489274cf2d76aea7e, type: 2}
+  - name: flowerbed
+    mat: {fileID: 2100000, guid: 9f32b531980f7cb47b76eb84b9c645cb, type: 2}
+  - name: forest
+    mat: {fileID: 2100000, guid: 6041e2aba4a6521489274cf2d76aea7e, type: 2}
+  - name: meadow
+    mat: {fileID: 2100000, guid: 9f32b531980f7cb47b76eb84b9c645cb, type: 2}
+  - name: vineyard
+    mat: {fileID: 2100000, guid: 9f32b531980f7cb47b76eb84b9c645cb, type: 2}
+  - name: basin
+    mat: {fileID: 2100000, guid: 9f32b531980f7cb47b76eb84b9c645cb, type: 2}
+  - name: brownfield
+    mat: {fileID: 2100000, guid: 6041e2aba4a6521489274cf2d76aea7e, type: 2}
+  - name: cemetery
+    mat: {fileID: 2100000, guid: 9f32b531980f7cb47b76eb84b9c645cb, type: 2}
+  - name: depot
+    mat: {fileID: 2100000, guid: bf61ee3da27bd0b43b4fc8b93079357f, type: 2}
+  - name: garages
+    mat: {fileID: 2100000, guid: bf61ee3da27bd0b43b4fc8b93079357f, type: 2}
+  - name: grass
+    mat: {fileID: 2100000, guid: 9f32b531980f7cb47b76eb84b9c645cb, type: 2}
+  - name: greenfield
+    mat: {fileID: 2100000, guid: 9f32b531980f7cb47b76eb84b9c645cb, type: 2}
+  - name: landfill
+    mat: {fileID: 2100000, guid: 6041e2aba4a6521489274cf2d76aea7e, type: 2}
+  - name: military
+    mat: {fileID: 2100000, guid: bf61ee3da27bd0b43b4fc8b93079357f, type: 2}
+  - name: plant_nursery
+    mat: {fileID: 2100000, guid: 9f32b531980f7cb47b76eb84b9c645cb, type: 2}
+  - name: port
+    mat: {fileID: 2100000, guid: bf61ee3da27bd0b43b4fc8b93079357f, type: 2}
+  - name: quarry
+    mat: {fileID: 2100000, guid: 541f30bee6b9bc6458d47e0a70e8e479, type: 2}
+  - name: railway
+    mat: {fileID: 2100000, guid: 541f30bee6b9bc6458d47e0a70e8e479, type: 2}
+  - name: recreation_ground
+    mat: {fileID: 2100000, guid: 9f32b531980f7cb47b76eb84b9c645cb, type: 2}
+  - name: religious
+    mat: {fileID: 2100000, guid: 9f32b531980f7cb47b76eb84b9c645cb, type: 2}
+  - name: reservoir
+    mat: {fileID: 2100000, guid: 860660d2240f75c45bcb56c061f53844, type: 2}
+  - name: salt_pond
+    mat: {fileID: 2100000, guid: 860660d2240f75c45bcb56c061f53844, type: 2}
+  - name: village_green
+    mat: {fileID: 2100000, guid: 9f32b531980f7cb47b76eb84b9c645cb, type: 2}
+  - name: scrub
+    mat: {fileID: 2100000, guid: 9f32b531980f7cb47b76eb84b9c645cb, type: 2}
+  - name: reservoir_watershed
+    mat: {fileID: 2100000, guid: 860660d2240f75c45bcb56c061f53844, type: 2}
+  - name: school
+    mat: {fileID: 2100000, guid: bf61ee3da27bd0b43b4fc8b93079357f, type: 2}
+  - name: industrial;retail
+    mat: {fileID: 2100000, guid: c9d391753c5f9fd4797090aebfb44ee8, type: 2}
+  - name: lifestock
+    mat: {fileID: 2100000, guid: 9f32b531980f7cb47b76eb84b9c645cb, type: 2}
+  - name: mine
+    mat: {fileID: 2100000, guid: 541f30bee6b9bc6458d47e0a70e8e479, type: 2}
+  - name: logging
+    mat: {fileID: 2100000, guid: 6041e2aba4a6521489274cf2d76aea7e, type: 2}
+  - name: road
+    mat: {fileID: 2100000, guid: bf61ee3da27bd0b43b4fc8b93079357f, type: 2}
+  - name: park
+    mat: {fileID: 2100000, guid: 9f32b531980f7cb47b76eb84b9c645cb, type: 2}
+  - name: wood
+    mat: {fileID: 2100000, guid: 9f32b531980f7cb47b76eb84b9c645cb, type: 2}
+  - name: garden
+    mat: {fileID: 2100000, guid: 9f32b531980f7cb47b76eb84b9c645cb, type: 2}
+  - name: leisure
+    mat: {fileID: 2100000, guid: 9f32b531980f7cb47b76eb84b9c645cb, type: 2}
+  - name: paddock
+    mat: {fileID: 2100000, guid: 9f32b531980f7cb47b76eb84b9c645cb, type: 2}
+  - name: building
+    mat: {fileID: 2100000, guid: bf61ee3da27bd0b43b4fc8b93079357f, type: 2}
+--- !u!114 &260107852985123017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260107852985123009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9805dd52f314a21b110d12e16c3d476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layer:
+    serializedVersion: 2
+    m_Bits: 512
+  combineMeshes: 1
+  createCollider: 0
+  yOffset: 0
+  componentName: Rails
+  componentFullName: 
+  defaultMaterial: {fileID: 2100000, guid: 6041e2aba4a6521489274cf2d76aea7e, type: 2}
+  materials:
+  - name: rail
+    mat: {fileID: 2100000, guid: 7a76821d26fe7574fb6253e39e9d2037, type: 2}
+  - name: drivableSurface
+    mat: {fileID: 2100000, guid: c9d391753c5f9fd4797090aebfb44ee8, type: 2}
+  - name: rubber
+    mat: {fileID: 2100000, guid: c9d391753c5f9fd4797090aebfb44ee8, type: 2}
+  - name: crosstie
+    mat: {fileID: 2100000, guid: bf61ee3da27bd0b43b4fc8b93079357f, type: 2}
+--- !u!114 &260107852985123016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260107852985123009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 540dd903691e42269260c8eedb5a3481, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layer:
+    serializedVersion: 2
+    m_Bits: 512
+  combineMeshes: 1
+  createCollider: 0
+  yOffset: 0
+  componentName: Road
+  componentFullName: 
+  defaultMaterial: {fileID: 2100000, guid: d4ec74dafde10484ebffc4851d1fc398, type: 2}
+  materials:
+  - name: motorway
+    mat: {fileID: 2100000, guid: 4b3a5b00bdc827b41b9e4caf92f07a7f, type: 2}
+  - name: trunk
+    mat: {fileID: 2100000, guid: 86aa8c911ff98434b835bac0d80d871c, type: 2}
+  - name: primary
+    mat: {fileID: 2100000, guid: cf4e6b03d27362e46a8f4212e2ecabaf, type: 2}
+  - name: secondary
+    mat: {fileID: 2100000, guid: a16b12ab466bac84c85c84de133aec10, type: 2}
+  - name: arrow
+    mat: {fileID: 2100000, guid: 7b8df1fa5a7b2ba4e8de486720cac5f4, type: 2}
+  markingsMat: {fileID: 0}
+  markingsDashedMat: {fileID: 0}
+  roadTypes:
+  - motorway
+  - trunk
+  - primary
+  - secondary
+  - tertiary
+  - unclassified
+  - residential
+  - motorway_link
+  - trunk_link
+  - primary_link
+  - secondary_link
+  - tertiary_link
+  - living_street
+  - road
+--- !u!114 &260107852985123021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260107852985123009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfed0926a66e4941b4c90869658cd566, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layer:
+    serializedVersion: 2
+    m_Bits: 512
+  combineMeshes: 1
+  createCollider: 0
+  yOffset: -0.03
+  componentName: Waterway
+  componentFullName: 
+  defaultMaterial: {fileID: 2100000, guid: 860660d2240f75c45bcb56c061f53844, type: 2}
+  materials: []
+--- !u!114 &3447626726949531013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260107852985123009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2a2cb34fd9fa2e4b89e3924349ed3cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layer:
+    serializedVersion: 2
+    m_Bits: 512
+  combineMeshes: 0
+  createCollider: 1
+  yOffset: 0
+  componentName: NaviPath
+  componentFullName: 
+  triggerTag: NaviPathTrigger
+  waypoints: {fileID: 0}
+  width: 2
+  lineMaterial: {fileID: 2100000, guid: 21ffc39c934f3b14f91c5f435f5a02cb, type: 2}
+  outlineMaterial: {fileID: 2100000, guid: 080a94f28fcc58d44988f807a8249a26, type: 2}
